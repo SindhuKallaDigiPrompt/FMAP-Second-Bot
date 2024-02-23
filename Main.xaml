@@ -1,0 +1,737 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="883.333333333333,7758.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main - FMAP Bot" sap:VirtualizedContainerService.HintSize="864.666666666667,7694" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="cRetryThreshold" />
+      <Variable x:TypeArguments="x:Int32" Name="vAttemptCounter" />
+      <Variable x:TypeArguments="x:Boolean" Name="vReadConfigStatus" />
+      <Variable x:TypeArguments="x:String" Name="cSubjectEmail" />
+      <Variable x:TypeArguments="x:String" Name="cReceiversMailAddress" />
+      <Variable x:TypeArguments="x:Int32" Name="cPortNumber" />
+      <Variable x:TypeArguments="x:String" Name="cSMTPServer" />
+      <Variable x:TypeArguments="x:String" Name="cFromEmailAddress" />
+      <Variable x:TypeArguments="x:String" Name="vEmailPassword" />
+      <Variable x:TypeArguments="x:String" Name="cEmailName" />
+      <Variable x:TypeArguments="x:String" Name="cLogFolderPath" />
+      <Variable x:TypeArguments="x:String" Name="vLogFilePath" />
+      <Variable x:TypeArguments="x:Int32" Name="cWaitCounter" />
+      <Variable x:TypeArguments="x:String" Name="vExceptionReason" />
+      <Variable x:TypeArguments="x:Int32" Name="vRowCounter" />
+      <Variable x:TypeArguments="s:DateTime" Name="vBOTEndTime" />
+      <Variable x:TypeArguments="x:String" Name="cBOTDurationMinutes" />
+      <Variable x:TypeArguments="s:DateTime" Name="vBOTStartTime" />
+      <Variable x:TypeArguments="x:String" Name="cBOTDurationHours" />
+      <Variable x:TypeArguments="x:String" Name="vConfigFilePath" />
+      <Variable x:TypeArguments="x:String" Name="cErrorScreenshotFolderPath" />
+      <Variable x:TypeArguments="x:String" Name="vTaskName" />
+      <Variable x:TypeArguments="ss:SecureString" Name="vSecureEmailPassword" />
+      <Variable x:TypeArguments="x:String" Name="vSecureEmailID" />
+      <Variable x:TypeArguments="x:String" Name="vSequenceName" />
+      <Variable x:TypeArguments="x:String" Name="vDelayTime" />
+      <Variable x:TypeArguments="x:String" Name="vActionStatus" />
+      <Variable x:TypeArguments="x:Boolean" Name="vTaskCompleted" />
+      <Variable x:TypeArguments="sd:DataTable" Name="vConfigDT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="vMasterDT" />
+      <Variable x:TypeArguments="s:Exception" Name="vDummyException" />
+      <Variable x:TypeArguments="x:String" Name="vSecureEmail" />
+      <Variable x:TypeArguments="x:String" Name="cOutputFile" />
+      <Variable x:TypeArguments="x:String" Name="cFMAP_Url" />
+      <Variable x:TypeArguments="x:String" Name="cBOTDelayTime" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="vRefreshTime" />
+      <Variable x:TypeArguments="x:String" Name="cFMAPEndpoint" />
+      <Variable x:TypeArguments="x:String" Name="vBodyOfFMAPEndpoint" />
+      <Variable x:TypeArguments="x:Boolean" Name="vLoginsucces" />
+      <Variable x:TypeArguments="ui:Browser" Name="vBrowserSession" />
+      <Variable x:TypeArguments="x:Boolean" Name="vLoginsucces1" />
+      <Variable x:TypeArguments="x:String" Name="cCCEmail" />
+      <Variable x:TypeArguments="x:String" Name="cMediumDelay" />
+      <Variable x:TypeArguments="x:String" Name="cShortDelay" />
+      <Variable x:TypeArguments="x:String" Name="cLongDelay" />
+      <Variable x:TypeArguments="x:Int32" Name="cImplitWait" />
+      <Variable x:TypeArguments="x:String" Name="vPasswordExpirymsg" />
+      <Variable x:TypeArguments="x:Int32" Name="vTime" />
+      <Variable x:TypeArguments="x:Boolean" Name="vIsWebSiteDown" />
+      <Variable x:TypeArguments="x:String" Name="vErrorMessage" />
+      <Variable x:TypeArguments="x:Boolean" Name="vReadFMAPmappingStatus" />
+      <Variable x:TypeArguments="x:String" Name="vFMAPmappingFilePath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="vFMAPmappingDt" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[vTaskName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Main</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[vAttemptCounter]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[cRetryThreshold]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">3</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="True" DisplayName="Close Window 'chrome.exe  FMAP'" sap:VirtualizedContainerService.HintSize="802.666666666667,107.333333333333" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="c173c07d53053b1577e580095b86fc98" Selector="&lt;wnd app='chrome.exe' title='FMAP - Google Chrome' /&gt;" WaitForReady="COMPLETE" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="802.666666666667,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="500.666666666667,432" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <TryCatch DisplayName="Try Catch - For Configpath" sap:VirtualizedContainerService.HintSize="438.666666666667,321.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch.Try>
+              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="FMAP_ConfigFilePath" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="284,82" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[vSecureEmailPassword]" Username="[cFromEmailAddress]" />
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <TryCatch DisplayName="Try Catch - For Credential Retrieval" sap:VirtualizedContainerService.HintSize="802.666666666667,54" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="FMAP_Email" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="284,82" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[vSecureEmailPassword]" Username="[vSecureEmail]" />
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <Assign DisplayName="Assign - Retrieve Password From Assets" sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[vEmailPassword]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[new System.Net.NetworkCredential(string.Empty,vSecureEmailPassword).Password]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[vReadConfigStatus]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_28">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[vReadFMAPmappingStatus]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ReadConfig workflow" sap:VirtualizedContainerService.HintSize="802.666666666667,115.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReadConfig.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="x:String" x:Key="vConfigFilePath">[vConfigFilePath]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cLogFolderPath">[cLogFolderPath]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cErrorScreenshotFolderPath">[cErrorScreenshotFolderPath]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cShortDelay">[cShortDelay]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cMediumDelay">[cMediumDelay]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cLongDelay">[cLongDelay]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="cWaitCounter">[cWaitCounter]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="cImplitWait">[cImplitWait]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cReceiversMailAddress">[cReceiversMailAddress]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cSubjectEmail">[cSubjectEmail]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Boolean" x:Key="vReadConfigStatus">[vReadConfigStatus]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cFromEmailAddress">[cFromEmailAddress]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="vLogFilePath">[vLogFilePath]</InOutArgument>
+        <InOutArgument x:TypeArguments="s:DateTime" x:Key="vBOTStartTime">[vBOTStartTime]</InOutArgument>
+        <InOutArgument x:TypeArguments="s:DateTime" x:Key="vBOTEndTime">[vBOTEndTime]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="cPortNumber">[cPortNumber]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cSMTPServer">[cSMTPServer]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cCCEmail">[cCCEmail]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cEmailName">[cEmailName]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cBOTDurationHours">[cBOTDurationHours]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="cRetryThreshold">[cRetryThreshold]</InOutArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="vConfigDT">[vConfigDT]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cOutputFile">[cOutputFile]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cFMAP_Url">[cFMAP_Url]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cBOTDelayTime">[cBOTDelayTime]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cFMAPEndpoint">[cFMAPEndpoint]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="cBodyOfFMAPEndpoint">[vBodyOfFMAPEndpoint]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Boolean" x:Key="vReadFMAP_mappingStatus">[vReadFMAPmappingStatus]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="vMappingFilePath">[vFMAPmappingFilePath]</InOutArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="FMAPMappingDt">[vFMAPmappingDt]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <If Condition="[File.Exists(cOutputFile)]" DisplayName="Output File Exists or Not" sap:VirtualizedContainerService.HintSize="802.666666666667,302" sap2010:WorkflowViewState.IdRef="If_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Else>
+        <ui:AppendLine DisplayName="Append Line" FileName="[cOutputFile]" sap:VirtualizedContainerService.HintSize="334,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_21" Text="FirstName,LastName,Contact Number,Email,Address_0thIndexElement,Address_1stIndexElement,Address_2ndIndexElement,County,OccupancyType,ConstructionType,Dwelling,YearBuilt,Lead Pushed Time,Lead Tagged Time" UseDefaultEncoding="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:AppendLine>
+      </If.Else>
+    </If>
+    <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="802.666666666667,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_13" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName+&quot;,&quot; + &quot;Read config task completed&quot; +&quot;,&quot; + &quot;success&quot;]" UseDefaultEncoding="False">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="802.666666666667,25.3333333333333" sap2010:WorkflowViewState.IdRef="Delay_2" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="802.666666666667,794.666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_17">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="500.666666666667,555.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_39">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,444.666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_16">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch.Try>
+              <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Hi Humans,&quot; &amp; vbNewLine &amp; vbNewLine&#x9;&amp;&#xA;&quot;Relax ! FMAP Bot Started Excecution&quot; &amp; vbNewLine &amp; vbNewLine&#x9;&amp;&#xA;&quot;Regards,&quot;  &amp; vbNewLine &amp;&#xA;&quot;FMAP Bot&quot;]" Cc="[cCCEmail]" DisplayName="Send SMTP Mail Message - FMAP BOT Start Email" Email="[cFromEmailAddress]" EnableSSL="True" From="[cFromEmailAddress]" sap:VirtualizedContainerService.HintSize="334,205.333333333333" sap2010:WorkflowViewState.IdRef="SendMail_6" IsBodyHtml="False" Name="[cEmailName]" Password="[vEmailPassword]" Port="[cPortNumber]" SecureConnection="Auto" Server="[cSMTPServer]" Subject="[cSubjectEmail]" To="[cReceiversMailAddress]">
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                </ui:SendMail.Files>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendMail>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_16">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="505.333333333333,22" sap2010:WorkflowViewState.IdRef="Catch`1_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="802.666666666667,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_14" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName +&quot;,&quot;+ &quot;Send Start mail completed&quot; +&quot;,&quot; + &quot;success&quot;]" UseDefaultEncoding="False">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[vAttemptCounter]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="802.666666666667,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName +&quot;,&quot;+ &quot;Read config File values&quot; +&quot;,&quot; + &quot;success&quot;]" UseDefaultEncoding="False">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+    <Assign DisplayName="vBOTStartTime Read From Config" sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_14">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[vBOTStartTime]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Bot End time Caluclation " sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_15">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[vBOTEndTime]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[DateAdd(Dateinterval.Hour,Cdbl(Trim(cBOTDurationHours)),vBOTStartTime)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="802.666666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_17">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:TimeSpan">[vRefreshTime]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:TimeSpan">[TimeSpan.FromSeconds(Integer.Parse( cBOTDelayTime))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InterruptibleWhile Condition="[vBOTEndTime &gt; Now]" DisplayName="While- retry after every 5 sec" sap:VirtualizedContainerService.HintSize="802.666666666667,2853.33333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="766,2682.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="vLogin" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Delay Duration="[vRefreshTime]" sap:VirtualizedContainerService.HintSize="704,25.3333333333333" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          <ui:UiElementExists DisplayName="Element Exists" Exists="[vLoginsucces]" sap:VirtualizedContainerService.HintSize="704,69.3333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7b86c42c-e3fc-43dc-81c4-8b73f559549f" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl aria-role='tab' tag='BUTTON' aaname='Tagged Leads' /&gt;" TimeoutMS="6000" WaitForReady="COMPLETE" />
+            </ui:UiElementExists.Target>
+          </ui:UiElementExists>
+          <If Condition="[vLoginsucces]" sap:VirtualizedContainerService.HintSize="704,1102.66666666667" sap2010:WorkflowViewState.IdRef="If_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="558,940.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="496,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_16" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName+&quot;,&quot; + &quot;Login Module will be executed&quot; +&quot;,&quot; + &quot;success&quot;]" UseDefaultEncoding="False">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:AppendLine>
+                <Sequence DisplayName="Sequence login " sap:VirtualizedContainerService.HintSize="496,653.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login workflow" sap:VirtualizedContainerService.HintSize="434,115.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Login.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InOutArgument x:TypeArguments="x:Boolean" x:Key="vActionStatus" />
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vLogFilePath">[vLogFilePath]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:Int32" x:Key="cWaitCounter">[cWaitCounter]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cReceiversMailAddress">[cReceiversMailAddress]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cEmailName">[cEmailName]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cFromEmailAddress">[cFromEmailAddress]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cSMTPServer">[cSMTPServer]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:Int32" x:Key="cPortNumber">[cPortNumber]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vEmailPassword">[vEmailPassword]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cFMAP_Url">[cFMAP_Url]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cSubjectEmail">[cSubjectEmail]</InOutArgument>
+                      <InOutArgument x:TypeArguments="ui:Browser" x:Key="vBrowserSession">[vBrowserSession]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cCCEmail">[cCCEmail]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:Boolean" x:Key="vIsWebSiteDown">[vIsWebSiteDown]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vErrorMessage">[vErrorMessage]</InOutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_25">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[cFromEmailAddress]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[vSecureEmail]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign DisplayName="Assign - Retrieve Password From Assets" sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_26">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[vEmailPassword]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[new System.Net.NetworkCredential(string.Empty,vSecureEmailPassword).Password]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="434,136.666666666667" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName+&quot;,&quot; + &quot;Email Credentials and Config File path Retrieved from Assets&quot; +&quot;,&quot;+ &quot;Success&quot;]" UseDefaultEncoding="False">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AppendLine>
+                </Sequence>
+              </Sequence>
+            </If.Else>
+          </If>
+          <If Condition="[vIsWebSiteDown]" sap:VirtualizedContainerService.HintSize="704,328.666666666667" sap2010:WorkflowViewState.IdRef="If_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Break sap:VirtualizedContainerService.HintSize="388,25.3333333333333" sap2010:WorkflowViewState.IdRef="Break_1" />
+              </Sequence>
+            </If.Then>
+          </If>
+          <Sequence DisplayName="Sequence if  logged in " sap:VirtualizedContainerService.HintSize="704,886" sap2010:WorkflowViewState.IdRef="Sequence_35">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534.666666666667,775.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <Sequence sap:VirtualizedContainerService.HintSize="496,535.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DataCapture workflow" sap:VirtualizedContainerService.HintSize="434,115.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="DataCapture.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cOutputFile">[cOutputFile]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vLogFilePath">[vLogFilePath]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cFMAPEndpoint">[cFMAPEndpoint]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vBodyOfFMAPEndpoint">[vBodyOfFMAPEndpoint]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:Int32" x:Key="cRetryThreshold">[cRetryThreshold]</InOutArgument>
+                      <InOutArgument x:TypeArguments="ui:Browser" x:Key="vBrowserSession">[vBrowserSession]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cEmailName">[cEmailName]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cSMTPServer">[cSMTPServer]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:Int32" x:Key="cPortNumber">[cPortNumber]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="cCCEmail">[cCCEmail]</InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="cFromEmailAddress">[cFromEmailAddress]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="vEmailPassword">[vEmailPassword]</InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="vFMAP_MappingDt">[vFMAPmappingDt]</InOutArgument>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="vMappingFilePath">[vFMAPmappingFilePath]</InOutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_27">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[cWaitCounter]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">30</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="356.8,144" sap2010:WorkflowViewState.IdRef="AppendLine_12" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName+&quot;,&quot; + &quot;Data Cpture Execution completed&quot; +&quot;,&quot;+ &quot;Success&quot;]" UseDefaultEncoding="False">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AppendLine>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InterruptibleWhile>
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="True" DisplayName="Close Window 'chrome.exe  FMAP'" sap:VirtualizedContainerService.HintSize="665.6,116.8" sap2010:WorkflowViewState.IdRef="CloseWindow_3" InformativeScreenshot="c173c07d53053b1577e580095b86fc98" Selector="&lt;wnd app='chrome.exe' /&gt;" WaitForReady="COMPLETE" />
+    <Sequence DisplayName="Sequence-Email output file" sap:VirtualizedContainerService.HintSize="637.6,842.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="515.2,749.6" sap2010:WorkflowViewState.IdRef="TryCatch_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch.Try>
+          <Sequence sap:VirtualizedContainerService.HintSize="478.4,518.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,425.6" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Hi Humans,&quot; &amp; vbNewLine &amp; vbNewLine&#x9;&amp;&#xA;&quot;Please find attached output file.&quot; &amp; vbNewLine &amp; vbNewLine&#x9;&amp;&#xA;&quot;Regards,&quot;  &amp; vbNewLine &amp; vbNewLine &amp;&#xA;&quot;FMAP Bot&quot;]" Cc="[cCCEmail]" DisplayName="Send SMTP Mail Message - Master Bot Start Email" Email="[cFromEmailAddress]" EnableSSL="True" From="[cFromEmailAddress]" sap:VirtualizedContainerService.HintSize="333.6,194.4" sap2010:WorkflowViewState.IdRef="SendMail_5" IsBodyHtml="False" Name="[cEmailName]" Password="[vEmailPassword]" Port="[cPortNumber]" SecureConnection="Auto" Server="[cSMTPServer]" Subject="[cSubjectEmail]" To="[cReceiversMailAddress]">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                      <InArgument x:TypeArguments="x:String">[cOutputFile]</InArgument>
+                    </scg:List>
+                  </ui:SendMail.Files>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:SendMail>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="481.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+    </Sequence>
+    <ui:AppendLine DisplayName="Log to file" FileName="[vLogFilePath]" sap:VirtualizedContainerService.HintSize="637.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_19" Text="[now.ToLocalTime.ToString + &quot;,&quot; + vTaskName+&quot;,&quot; + &quot;BOT excecution completed&quot; +&quot;,&quot; + &quot;success&quot;]" UseDefaultEncoding="False">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+  </Sequence>
+</Activity>
